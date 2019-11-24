@@ -4,6 +4,13 @@ Spyder Editor
 
 This is a temporary script file.
 """
+# check path data existed? --------------------------------------------
+#
+import os
+import os.path
+if not os.path.exists("./data"):
+    os.mkdir("./data")
+
 # download file from www ----------------------------------------------
 #
 from urllib.request import urlretrieve
